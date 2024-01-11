@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% block title %}about me{% endblock %}
+
+{% block background %} {%load static%} {% static 'core/img/about-bg.jpg'%} {% endblock %}  <!-- cargar imagen de fondo -->
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+
+{% block content %}
+<div class="row">  
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="{% static 'core/img/perfil.jpeg'%} " alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Sergio Orozco</h2>   
+    <p>¡Hola, soy Sergio Orozco! 
+        Soy estudiante de desarrollo de software en la Universidad Católica de Pereira. Desde pequeño, he sentido una pasión innata por la tecnología, y ahora, estoy transformando ese interés en una carrera que me permite explorar y contribuir al emocionante universo de la programación.
+        Además de mi amor por la tecnología, otra de mis grandes pasiones son los deportes. Encuentro equilibrio y motivación en la actividad física, ya sea disfrutando de un partido de fútbol con amigos o manteniéndome activo en el gimnasio. Creo firmemente en la importancia de un estilo de vida equilibrado que combine el intelecto con la actividad física.
+    </p>
+    </div>
+</div>
+
+{% endblock %}
+

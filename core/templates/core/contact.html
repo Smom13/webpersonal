@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% block title %}Mi contacto{% endblock %}
+
+{% block background %} {%load static%} {% static 'core/img/contact-bg.jpg'%} {% endblock %}  <!-- cargar imagen de fondo -->
+
+{% block headers %}
+
+<h1>Contacto</h1>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="row">  
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <p>¡Hola! Estoy encantado de conectarte. Si tienes preguntas, sugerencias o simplemente deseas ponerte en contacto con nosotros, no dudes en hacerlo.</p>
+        <br>
+        <p> <b>Teléfono: </b> <a href="https://api.whatsapp.com/send?phone=573169431230" target="_blank"> +57 3169431230</a>  </p>
+        
+        
+    </div>
+</div>
+
+{% endblock %}
